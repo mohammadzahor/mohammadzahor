@@ -1,4 +1,22 @@
-## Hi there 👋
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://router.huggingface.co/v1",
+    api_key=os.environ["HF_TOKEN"],
+)
+
+completion = client.chat.completions.create(
+    model="moonshotai/Kimi-K2-Instruct",
+    messages=[
+        {
+            "role": "user",
+            "content": "nonprofit organization"
+        }
+    ],
+)
+
+print(completion.choices[0].message)## Hi there 👋
 
 <!--
 **mohammadzahor/mohammadzahor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
