@@ -113,3 +113,5 @@ Here are some ideas to get you started:
   </footer>
 </body>
 </html>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5058730484953261"
+     crossorigin="anonymous"></script>
